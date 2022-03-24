@@ -25,8 +25,11 @@ SECRET_KEY = 'django-insecure-a2lrmcqpdjbk2z%bn1w7y7u73cjcu2)ih=mtj6ky=1f-6zq11+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','7c79b20f-8203-496d-8760-eff184bfd64b.id.repl.co']
+ALLOWED_HOSTS = ['https://cosc140-djangomodel.joelsommers1.repl.co','https://7c79b20f-8203-496d-8760-eff184bfd64b.id.repl.co','*']
 X_FRAME_OPTIONS = '*'
+CSRF_TRUSTED_ORIGINS = ['https://cosc140-djangomodel.joelsommers1.repl.co','https://7c79b20f-8203-496d-8760-eff184bfd64b.id.repl.co']
+
+SESSION_COOKIE_SAMESITE = 'None'
 
 # Application definition
 
